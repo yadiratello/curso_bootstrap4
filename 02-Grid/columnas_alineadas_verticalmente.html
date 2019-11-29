@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<title>Columnas alineadas verticalmente</title>
+	<style>
+		.row{
+			background: #676;
+			height: 150px;
+			margin-top: 20px;
+		}
+		.col{
+			background: #f2f2f2;
+			text-align: center;
+			padding: 10px;
+			border: 1px solid #4d5061;
+		}
+	</style>
+</head>
+
+<body>
+	<!--
+		alinea columnas de manera vertical	
+	alig-items-start : alinea los items arriba(comienzo) del contenedor.
+	alig-items-center : alinea los items al centro del contenedor
+	alig-items-end : alinea los items abajo(final) del contenedor
+	-->
+	<div class="container">
+		<div class="row align-items-start">
+			<div class="col">Columna #1</div>
+			<div class="col">Columna #2</div>
+			<div class="col">Columna #3</div>
+		</div>
+		<div class="row align-items-center">
+			<div class="col">Columna #4</div>
+			<div class="col">Columna #5</div>
+			<div class="col">Columna #6</div>
+		</div>
+		<div class="row align-items-end">
+			<div class="col">Columna #7</div>
+			<div class="col">Columna #8</div>
+			<div class="col">Columna #9</div>
+		</div>
+		
+		<br><br>
+		
+		<!------------------ Alineacion Independiente---------------->
+		
+		<div class="ro">
+			<div class="co">
+				<h2>Alineación Independiente</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col align-self-start">Columna #10</div>
+			<div class="col align-self-center">Columna #20</div>
+			<div class="col align-self-end">Columna #30</div>
+		</div>
+		
+	</div>
+
+
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

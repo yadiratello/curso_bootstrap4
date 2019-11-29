@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<title>Columnas alineadas horizontalmente</title>
+	<style>
+		.row{
+			background: #e8e8e8;
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+		.columna{
+			background: #f2f2f2;
+			text-align: center;
+			padding: 10px;
+			border: 1px solid #666
+		}
+	</style>
+</head>
+
+<body>
+	<!--
+	justify-content-start : coloca al comienzo los elementos
+	justify-content-center : centra los elementos
+	justify-content-end : coloca al final los elementos
+	justify-content-around: coloca el espacio restante entre c/u de los elementos
+	justify-content-between : coloca el espacio restante en medio de los elementos
+	-->
+	<div class="container">
+		<div class="row justify-content-start">
+			<div class="columna col-4">Columna #1</div>
+			<div class="columna col-4">Columna #2</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="columna col-4">Columna #3</div>
+			<div class="columna col-4">Columna #4</div>
+		</div>
+		<div class="row justify-content-end">
+			<div class="columna col-4">Columna #5</div>
+			<div class="columna col-4">Columna #6</div>
+		</div>
+		<div class="row justify-content-around">
+			<div class="columna col-4">Columna #3</div>
+			<div class="columna col-4">Columna #4</div>
+		</div>
+		<div class="row justify-content-between">
+			<div class="columna col-4">Columna #5</div>
+			<div class="columna col-4">Columna #6</div>
+		</div>
+	</div>
+
+
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

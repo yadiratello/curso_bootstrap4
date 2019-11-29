@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Barras de progreso</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-6">
+                <h1 class="h3">Barras de progreso</h1>
+                <hr>
+                <!-- barra de progreso -->
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" style="background:purple;">0%</div>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar"
+                        style="background: aqua;width: 50%;height: 15px;line-height: 15px;">50%</div>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" style="width:80%;background:blue;">80%</div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-primary" role="progressbar"
+                        style="width: 50%;height: 30px;line-height: 30px;">50%</div>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" role="progressbar"
+                        style="width: 50%;height: 30px;line-height: 30px;">50%</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="progress mb-3" style="height: 30px;line-height: 30px;">
+                    <div class="progress-bar progress-bar-striped bg-primary" role="progressbar"
+                        style="width: 50%;">50%</div>
+                </div>
+                <div class="progress mb-3" style="height: 30px;line-height: 30px;">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                        style="width: 50%;height: 30px;line-height: 30px;">50%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

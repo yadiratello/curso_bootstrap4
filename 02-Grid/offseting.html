@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<title>Offseting</title>
+	<style>
+		.row{
+			background: #e8e8e8;
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+		.columna{
+			background: #f2f2f2;
+			text-align: center;
+			padding: 10px;
+			border: 1px solid #666
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 
+	offset : da un espaciado entre el contenedor (lado izquierdo) y el contenedor que esta cerca. Sus valores van desde el 1 hasta el 12.
+	
+	offset-1 : un espaciado de 1 en todos los tmñ de pantalla
+	offset-sm-2 : un espaciado de 2 cuando el tmñ de pantalla sea small
+	offset-md-4 : un espaciado de 4 cuando el tmñ de pantalla sea mediano
+	offset-lg-0 : un espaciado de 0 cuando el tmñ de pantalla sea largo (quitamos el espaciado)
+	
+	-->
+	<div class="container">
+		<div class="row">
+			<div class="columna col-auto offset-1">Columna #1</div>
+		</div>
+		
+		<div class="row">
+			<div class="columna col-4 offset-4">Columna #1</div>
+		</div>
+		
+		<div class="row">
+			<div class="columna col-auto offset-1">Columna #1</div>
+			<div class="columna col-auto offset-1">Columna #2</div>
+		</div>
+		
+		<div class="row">
+			<div class="columna col-auto offset-1 offset-sm-2 offset-md-3 offset-lg-0">Columna #1</div>
+		</div>
+	</div>
+
+
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

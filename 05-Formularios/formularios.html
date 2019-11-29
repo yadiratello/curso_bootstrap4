@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <form action="">
+                    <div class="form-group">
+                        <label for="txtname">Nombre</label>
+                        <input class="form-control" type="text" placeholder="Nombre" name="name" id="txtname">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtpassword">Contraseña</label>
+                        <input class="form-control" type="password" placeholder="Contraseña" name="password"
+                            id="txtpassword">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtmessage">Mensaje</label>
+                        <textarea class="form-control" placeholder="mensaje" name="message" id="txtmessage"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <select name="pais" id="pais" class="form-control">
+                            <option value="mexico">Mexico</option>
+                            <option value="peru">Peru</option>
+                            <option value="Colombia">Colombia</option>
+                        </select>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="">
+                            <input type="radio" name="sexo" id="rbthombre" class="form-check-input mr-3">Hombre
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="">
+                            <input type="radio" name="sexo" id="rbtmujer" class="form-check-input mr-2">Mujer
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="">
+                            <input type="checkbox" name="terminos" id="chkterminos" class="form-check-input mr-2">Acepto terminos y condiciones
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-info mt-3">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<title>Popovers</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row mt-5">
+			<div class="col">
+				<h1 class="h2">Popovers</h1>
+				<hr>
+				<button class="btn btn-primary" data-container="body" data-placement="top" data-toggle="popover"
+					title="Titulo del popover"
+					data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ipsam.">Arriba</button>
+				<button class="btn btn-primary" data-container="body" data-placement="bottom" data-toggle="popover"
+					title="Titulo del popover"
+					data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ipsam.">Abajo</button>
+				<button class="btn btn-primary" data-container="body" data-placement="right" data-toggle="popover"
+					title="Titulo del popover"
+					data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ipsam.">Derecha</button>
+				<button class="btn btn-primary" data-container="body" data-placement="left" data-toggle="popover"
+					title="Titulo del popover"
+					data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ipsam.">Izquierda</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+	</script>
+	<!-- cdn de tether -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+	</script>
+
+	<!-- iniciando tether -->
+	<script>
+		$('[data-toggle="popover"]').popover();
+	</script>
+
+</body>
+
+</html>

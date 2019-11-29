@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Variantes de Inputs</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <h1 class="h2">Tamaños de inputs</h1>
+                <hr>
+                <form action="">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="" id="nombre" placeholder="Nombre"
+                            class="form-control form-control-lg">
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo</label>
+                        <input type="text" name="" id="correo" placeholder="correo"
+                            class="form-control form-control-lg">
+                    </div>
+                    <div class="form-group">
+                        <label for="pasaporte">Pasaporte</label>
+                        <input type="text" name="" id="pasaporte" placeholder="pasaporte"
+                            class="form-control form-control-sm">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+                <div class="col">
+                    <h1 class="h2">Estados de Readonly y Disabled</h1>
+                    <hr>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" name="" id="nombre" placeholder="No puedes modificar este texto"
+                                class="form-control form-control-lg" readonly>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="" id="correo" placeholder="deshabilitado"
+                                class="form-control form-control-lg" disabled>
+                        </div>
+                        <div class="form-group">
+                            <select name="" id="" class="form-control" disabled>
+                                <option value="1">Select Deshabilitado</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <input type="radio" name="" id="" disabled>Radio Button
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Navbar</title>
+    <style>
+        body{
+            padding-top: 56px;;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- bg-dark: cambia a oscuro el color del navbar 
+        bg-light: cambia a gris el color del navbar
+        bg-primary: cambia a azul el color del navbar
+        bg-default: cambia a transparente el color del navbar
+    -->
+    <nav class="navbar navbar-expand-md navbar-light bg-primary fixed-top">
+        <div class="container">
+            <!-- boton menu para dispositivos moviles -->
+            <a href="#" class="navbar-brand">Navbar</a>
+            <button class="navbar navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#mi-menu"
+                aria-controls="mi-menu" aria-expanded="false" aria-label="menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <!-- menu de navegacion -->
+            <div class="collapse navbar-collapse" id="mi-menu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Blog</a>
+                        <div class="dropdown-menu" aria-labelledby="menu-categorias">
+                            <a href="#" class="dropdown-item">Categoria 1</a>
+                            <a href="#" class="dropdown-item">Categoria 2</a>
+                            <a href="#" class="dropdown-item">Categoria 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Nosotros</a>
+                    </li>
+                </ul>
+                <!-- formulario de busqueda -->
+                <form action="" class="form-inline">
+                    <input type="text" class="form-control mr-2" placeholder="Buscar...">
+                    <button type="submit" class="btn btn-success">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="jumbotron">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam velit maxime, sit ad amet harum, repellat eligendi illum dolor vitae laborum odit ea unde nostrum! Aliquid adipisci ipsa illum laboriosam?</p>
+            </div>
+        </div>
+        <div class="row" style="margin-top:1000px;">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsam tempora quisquam tempore aperiam neque dolores facere, dicta perspiciatis accusamus, veritatis eaque placeat aliquam commodi. Temporibus laboriosam sequi esse earum.Voluptate consectetur earum ex aliquid quam odit voluptates maxime dolores, ipsa, quia quibusdam nobis aut, porro totam nisi recusandae! Omnis ducimus repudiandae expedita voluptatibus labore doloribus dolor quo veniam modi!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

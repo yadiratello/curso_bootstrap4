@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Bordes</title>
+    <style>
+        .caja{
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="row mt-3">
+            <!-- border-posicion-0 : quita el borde en la posicion indicada-->
+			<div class="col-6">
+				<div class="caja bg-faded"></div>
+				<div class="caja bg-faded border-0"></div>
+				<div class="caja bg-faded border-top-0"></div>
+				<div class="caja bg-faded border-left-0"></div>
+				<div class="caja bg-faded border-right-0"></div>
+				<div class="caja bg-faded border-bottom-0"></div>
+            </div>
+            <!-- ---------------------------------------------- -->
+
+            <!-- border-radius : bordes redondeados-->
+            <div class="col-6">
+                <!-- border-0 : quita el borde
+                    rounded-posicion: coloca bordes redondeados en la posicion indicada
+                    rounded-circle: coloca un borde redondeado de 100% a los 4 lados y forma un circulo
+                 -->
+                <div class="caja bg-primary border-0 rounded"></div>
+                <div class="caja bg-primary border-0 rounded-top"></div>
+                <div class="caja bg-primary border-0 rounded-left"></div>
+                <div class="caja bg-primary border-0 rounded-right"></div>
+                <div class="caja bg-primary border-0 rounded-bottom"></div>
+                <div class="caja bg-primary border-0 rounded-circle"></div>
+                <div class="caja bg-primary border-0 rounded-0"></div>
+            </div>
+            <!-- -------------------------------------------- -->
+		</div>
+	</div>
+
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

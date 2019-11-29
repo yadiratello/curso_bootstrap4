@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <title>Carousel</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Slider 1 -->
+        <div class="row">
+            <div class="col mt-3">
+                <div class="carousel slide" id="principal-carousel" data-ride="carousel">
+                    <!-- indicadores del carrusel -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#principal-carousel" data-slid-to="0" active></li>
+                        <li data-target="#principal-carousel" data-slid-to="1"></li>
+                        <li data-target="#principal-carousel" data-slid-to="2"></li>
+                    </ol>
+                    <!-- -------------------------- -->
+                    <!-- elementos del carrusel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/carousel1.jpg" alt="carrusel uno" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel2.jpg" alt="carrusel dos" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel3.jpg" alt="carrusel tres" />
+                        </div>
+                    </div>
+                    <!-- ------------------------------ -->
+                    <!-- flechas del carrusel -->
+                    <a href="#principal-carousel" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a href="#principal-carousel" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- --------- -->
+        <!-- Slider 2 -->
+        <div class="row">
+            <div class="col mt-3">
+                <div class="carousel slide" id="secondary-carousel" data-ride="carousel">
+                    <!-- indicadores del carrusel -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#secondary-carousel" data-slid-to="0" active></li>
+                        <li data-target="#secondary-carousel" data-slid-to="1"></li>
+                        <li data-target="#secondary-carousel" data-slid-to="2"></li>
+                    </ol>
+                    <!-- -------------------------- -->
+                    <!-- elementos del carrusel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-caption d-block">
+                                <h1 class="h4">Titulo de la imágen 1</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, molestias.</p>
+                            </div>
+                            <img src="img/carousel1.jpg" alt="carrusel uno" />
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption d-block">
+                                <h1 class="h4">Titulo de la imágen 2</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                            </div>
+                            <img src="img/carousel2.jpg" alt="carrusel dos" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel3.jpg" alt="carrusel tres" />
+                        </div>
+                    </div>
+                    <!-- ------------------------------ -->
+                    <!-- flechas del carrusel -->
+                    <a href="#secondary-carousel" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a href="#secondary-carousel" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- --------- -->
+    </div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

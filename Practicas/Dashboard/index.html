@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap </title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <!-- fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400,500&display=swap"
+        rel="stylesheet">
+    <!-- iconos fontello -->
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!--    Barra Lateral del Dashboard          -->
+            <div class="barra-lateral col-12 col-sm-auto">
+                <div class="logo">
+                    <h1 class="h2">Dashboard</h1>
+                </div>
+                <!-- menú de navegacion -->
+                <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+                    <a href="#"><i class="icon-home"></i><span>Inicio</span></a>
+                    <a href="#"><i class="icon-doc-text"></i><span>Entradas</span></a>
+                    <a href="#"><i class="icon-users"></i><span>Usuarios</span></a>
+                    <a href="#"><i class="icon-cog-alt"></i><span>Configuración</span></a>
+                    <a href="#"><i class="icon-logout"></i><span>Salir</span></a>
+                </nav>
+            </div>
+            <!-- -------------------------------------- -->
+            <!------   Nuevas Entradas, Estadisticas y Comentarios  --------->
+            <main class="main col">
+                <div class="row">
+                    <!-- Sección Nueva Entrada -->
+                    <div class="columna col-lg-7">
+                        <div class="widget nueva-entrada">
+                            <h2 class="h3 titulo">Nueva Entrada</h2>
+                            <form action="">
+                                <input type="text" placeholder="Titulo de la Entrada">
+                                <textarea
+                                    placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus aut vero dolores commodi dolorem veniam in temporibus cum odit."></textarea>
+                                <div class="d-flex justify-content-end">
+                                    <button><i class="icon icon-edit"></i> Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Sección Estadisticas y Comentarios -->
+                    <div class="columna col-lg-5">
+                        <div class="widget estadisticas">
+                            <h3 class="titulo">Estadisticas</h3>
+                            <div class="contenedor d-flex flex-wrap">
+                                <div class="caja">
+                                    <h3>15,233</h3>
+                                    <p>Visitas</p>
+                                </div>
+                                <div class="caja">
+                                    <h3>1,831</h3>
+                                    <p>Registros</p>
+                                </div>
+                                <div class="caja">
+                                    <h3>11,987</h3>
+                                    <p>Ingresos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sección Comentarios -->
+                        <div class="widget comentarios">
+                            <h3 class="titulo">Comentarios</h3>
+                            <div class="contenedor">
+                                <!-- comentario 1 -->
+                                <div class="comentario d-flex flex-wrap">
+                                    <div class="foto">
+                                        <a href="#">
+                                            <img src="img/persona1.jpg" alt="persona 1" width="100">
+                                        </a>
+                                    </div>
+                                    <div class="texto">
+                                        <a href="#">Jhon Doe</a>
+                                        <p>en <a href="#">Mi primer Entrada</a></p>
+                                        <p class="texto-comentario">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Nemo alias architecto, deserunt numquam corrupti dolorem.</p>
+                                    </div>
+                                    <div class="botones d-flex justify-content-start flex-wrap w-100">
+                                        <button class="aprobar"><i class="icono icon-ok"></i>Aprobar</button>
+                                        <button class="eliminar"><i class="icono icon-cancel"></i>Eliminar</button>
+                                        <button class="bloquear"><i class="icono icon-flag"></i>Bloquear
+                                            usuario</button>
+                                    </div>
+                                </div>
+                                <!-- comentario 2 -->
+                                <div class="comentario d-flex flex-wrap">
+                                    <div class="foto">
+                                        <a href="#">
+                                            <img src="img/persona2.jpg" alt="persona 1" width="100">
+                                        </a>
+                                    </div>
+                                    <div class="texto">
+                                        <a href="#">Pedro Lopez</a>
+                                        <p>en <a href="#">Mi primer Entrada</a></p>
+                                        <p class="texto-comentario">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Nemo alias architecto, deserunt numquam corrupti dolorem.</p>
+                                    </div>
+                                    <div class="botones d-flex justify-content-start flex-wrap w-100">
+                                        <button class="aprobar"><i class="icono icon-ok"></i>Aprobar</button>
+                                        <button class="eliminar"><i class="icono icon-cancel"></i>Eliminar</button>
+                                        <button class="bloquear"><i class="icono icon-flag"></i>Bloquear
+                                            usuario</button>
+                                    </div>
+                                </div>
+                                <!-- comentario 3 -->
+                                <div class="comentario d-flex flex-wrap">
+                                    <div class="foto">
+                                        <a href="#">
+                                            <img src="img/persona3.jpg" alt="persona 1" width="100">
+                                        </a>
+                                    </div>
+                                    <div class="texto">
+                                        <a href="#">Juana Gomez</a>
+                                        <p>en <a href="#">Mi primer Entrada</a></p>
+                                        <p class="texto-comentario">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Nemo alias architecto, deserunt numquam corrupti dolorem.</p>
+                                    </div>
+                                    <div class="botones d-flex justify-content-start flex-wrap w-100">
+                                        <button class="aprobar"><i class="icono icon-ok"></i>Aprobar</button>
+                                        <button class="eliminar"><i class="icono icon-cancel"></i>Eliminar</button>
+                                        <button class="bloquear"><i class="icono icon-flag"></i>Bloquear
+                                            usuario</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+            <!-- -------------------------------------- -->
+        </div>
+    </div>
+
+
+    <!-- jquery -->
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+    <!-- script de bottstrap -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<title>Definiendo el orden de las columnas</title>
+	<style>
+		.row{
+			background: #e8e8e8;
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+		.columna{
+			background: #f2f2f2;
+			text-align: center;
+			padding: 10px;
+			border: 1px solid #666
+		}
+	</style>
+</head>
+
+<body>
+	<!--
+	Usa .order-clases para controlar el orden visual de tu contenido. Estas clases responden, por lo que puede establecer el orderpunto de interrupción (por ejemplo, .order-1 .order-md-2). Incluye soporte para 1a  través 12 a través de todos los cinco niveles de la red.
+	
+	También hay respuestas .order-first y .order-last clases que cambian la orderde un elemento aplicando order: -1 y order: 13( order: $columns + 1), respectivamente. Estas clases también se pueden mezclar con las .order-*clases numeradas según sea necesario.
+	-->
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="columna col-2 order-4 order-sm-2">Columna #1</div>
+			<div class="columna col-2 order-2 order-sm-1">Columna #2</div>
+			<div class="columna col-2 order-3 order-sm-4">Columna #3</div>
+			<div class="columna col-2 order-1 order-sm-3">Columna #4</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="columna col-2 order-last">Columna #1</div>
+			<div class="columna col-2 order-first">Columna #2</div>
+			<div class="columna col-2">Columna #3</div>
+			<div class="columna col-2 order-last">Columna #4</div>
+		</div>
+	</div>
+	<!---->
+	<div class="row">
+		<div class="columna col-md-7 push-md-5">Columna #1</div>
+		<div class="columna col-md-3 pull-md-7">Columna #2</div>
+	</div>
+
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

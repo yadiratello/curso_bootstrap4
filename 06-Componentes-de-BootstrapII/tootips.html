@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Tooltips</title>
+     <!-- iniciando tether -->
+     <script>
+        $(function () {
+   $('[data-toggle="tooltip"]').tooltip()
+ })
+     </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <!-- <div class="col">
+                <p>Lorem, ipsum <a href="#" data-toggle="tooltip" data-placement="top" title="Tooltip on top" id="example">sit
+                        amet</a> consectetur adipisicing elit. Aliquam inventore accusamus adipisci cupiditate sapiente
+                    magnam ducimus ea. Qui cupiditate expedita laudantium a blanditiis rerum, quia aspernatur. Expedita
+                    repudiandae alias consequuntur.Deleniti excepturi, non sequi velit in similique at sed aliquid
+                    corrupti vel delectus quisquam quia ea voluptas dolorum est temporibus maxime inventore aperiam
+                    accusamus blanditiis obcaecati maiores beatae! Eaque, in.</p>
+            </div> -->
+            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                Tooltip on top
+              </button>
+        </div>
+    </div>
+
+    <!-- cdn de tether -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+   
+</body>
+
+</html>

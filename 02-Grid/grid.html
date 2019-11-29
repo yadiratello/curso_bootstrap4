@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<title>Grid</title>
+
+	<style>
+		.row > div {
+			background: #f2f2f2;
+			margin: 10px 0;
+		}
+
+	</style>
+</head>
+
+<body>
+	<!--El container es el contenedor principal, en el iran todas las filas y columnas-->
+	<!-- Con el container podemos centrar nuestra pagina-->
+	<div class="container">
+		<!--Las filas(row) son grupos horizontales de columnas -->
+		<div class="row">
+			<!--Todo el contenido debe de ir dentro de columnas(col)-->
+			<!-- Y las columnas deben ir directamente dentro de las filas(row)-->
+			<!--
+				NUEVO:
+				-----
+				Los tamaños de columna en Bootstrap 4 son:
+				
+				.col 		Extra Pequeño(Extra Small) - Smartphones Vertical 	Menos de 544px
+				.col-sm 	Pequeño (Small) - Smartphones Vertical 				Mas de 544px y Menos de 768px;
+				.col-md 	Mediano (Medium) - Tablets 							Mas de 768px y Menos de 992px
+				.col-lg 	Largo (Large) - Computadoras 						Mas de 992px y Menos de 1200px
+				.col-xl 	Extra Largo(Extra Large) - Computadoras 			Mas de 1200px
+			-->
+			<div class="col-12 col-sm-6 col-md">
+				<h1>Hola Mundo</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero sequi neque laudantium quidem quos beatae incidunt cupiditate sapiente, maiores architecto voluptate provident nesciunt nobis voluptatum reiciendis veniam tenetur explicabo! Doloremque.</p>
+			</div>
+			<div class="col-12 col-sm-6 col-md">
+				<h1>Hola Mundo</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero sequi neque laudantium quidem quos beatae incidunt cupiditate sapiente, maiores architecto voluptate provident nesciunt nobis voluptatum reiciendis veniam tenetur explicabo! Doloremque.</p>
+			</div>
+			<div class="col-12 col-sm col-md">
+				<h1>Hola Mundo</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero sequi neque laudantium quidem quos beatae incidunt cupiditate sapiente, maiores architecto voluptate provident nesciunt nobis voluptatum reiciendis veniam tenetur explicabo! Doloremque.</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<!--	enlazando jquery y bootstrap.js-->
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

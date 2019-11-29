@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Menú de mavegación</title>
+    <style>
+        .mi-nav .nav-link {
+            color: #fff;
+            padding: 15px;
+            ;
+        }
+
+        .mi-nav .disabled {
+            color: rgba(255, 255, 255, .5);
+        }
+
+        .mi-nav a:hover {
+            background: rgba(255, 255, 255, .1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-4">
+                <h1 class="h3">Menú con ul</h1>
+                <hr>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- menu con mis propios estilos css -->
+            <div class="col-12 mt-4">
+                <h1 class="h3 text-capitalize">menú con estilos css</h1>
+                <hr>
+                <ul class="mi-nav nav bg-dark text-white">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- menu utilizando la etiqueta nav  -->
+            <div class="col-12 mt-3">
+                <h3>Menú con nav</h3>
+                <hr>
+                <nav class="nav">
+                    <a href="#" class="nav-link active">Inicio</a>
+                    <a href="#" class="nav-link">Blog</a>
+                    <a href="#" class="nav-link disabled">Proximamente</a>
+                    <a href="#" class="nav-link">Contacto</a>
+                </nav>
+            </div>
+            <!-- menu centrado utilizando flexbox  -->
+            <div class="col-12 mt-3">
+                <h3>Alineando el Menú con flexbox</h3>
+                <hr>
+                <nav class="nav justify-content-center">
+                    <a href="#" class="nav-link active">Inicio</a>
+                    <a href="#" class="nav-link">Blog</a>
+                    <a href="#" class="nav-link disabled">Proximamente</a>
+                    <a href="#" class="nav-link">Contacto</a>
+                </nav>
+            </div>
+            <!-- menu vertical utilizando flexbox  -->
+            <div class="col-12 mt-3">
+                <h3>Menú vertical</h3>
+                <hr>
+                <nav class="mi-nav bg-dark text-white nav flex-column">
+                    <a href="#" class="nav-link active">Inicio</a>
+                    <a href="#" class="nav-link">Blog</a>
+                    <a href="#" class="nav-link disabled">Proximamente</a>
+                    <a href="#" class="nav-link">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

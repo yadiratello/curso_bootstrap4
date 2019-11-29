@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Ventanas Modal</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <!----------------------- MODAL #1 ------------------>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#miModal">Abrir Modal</button>
+                <!-- modal -->
+                <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="miModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <!-- header del modal -->
+                            <div class="modal-header">
+                                <h1 class="h5 modal-title">Titulo de la ventana</h1>
+                                <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <!-- contenido del modal -->
+                            <div class="modal-body">
+                                <h2>Hola Mundo</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eligendi quidem minus
+                                    tempora quam, perferendis fugit rerum dolorum quod eius explicabo odio recusandae
+                                    voluptatibus laboriosam aliquam! Provident, voluptatem. Magnam, possimus?Ratione
+                                    quo, consectetur debitis doloremque sed suscipit tempora assumenda architecto,
+                                    quidem consequatur autem aspernatur beatae modi soluta quas iste porro! Cum nemo,
+                                    optio obcaecati officiis distinctio est ipsa officia quam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------- -->
+                <!----------------------- MODAL #2 ------------------>
+                <button class="btn btn-info" data-toggle="modal" data-target="#miModal2">Abrir Modal con Grid</button>
+                <!-- modal -->
+                <div class="modal fade" id="miModal2" tabindex="-1" role="dialog" aria-labelledby="miModal2"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <!-- header del modal -->
+                            <div class="modal-header">
+                                <h1 class="h5 modal-title">GRID</h1>
+                                <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <!-- contenido del modal -->
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                                                eos incidunt itaque accusamus quod recusandae minus numquam atque
+                                                quaerat. Reiciendis eius porro excepturi dolorem rem totam iste
+                                                voluptas, dolorum minus?</p>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <p>Lorem, ipsum dolor sit amet consectetur
+                                                adipisicing elit. Exercitationem
+                                                eos incidunt itaque accusamus quod recusandae minus numquam atque
+                                                quaerat. Reiciendis eius porro excepturi dolorem rem totam iste
+                                                voluptas, dolorum minus?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- pie de pagina del modal -->
+                            <div class="modal-footer">
+                                <button class="btn btn-success">Aceptar</button>
+                                <button class="btn btn-info" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
